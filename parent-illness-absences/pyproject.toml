@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parent-illness-absences"
+version = "0.1.0"
+description = "CPS/IPUMS + BLS analysis: own-illness absences among parents vs non-parents"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Maintainers" }]
+license = { file = "LICENSE" }
+dependencies = [
+  "pandas",
+  "numpy",
+  "requests",
+  "ipumspy",
+  "statsmodels",
+  "matplotlib",
+  "pyjanitor",
+  "pyarrow",
+  "python-dotenv",
+]
+
+[tool.ruff]
+line-length = 100
+lint.select = ["E","F","I"]
+
+[tool.isort]
+profile = "black"
+

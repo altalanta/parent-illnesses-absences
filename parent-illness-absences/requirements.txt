@@ -1,0 +1,13 @@
+pandas
+numpy
+requests
+ipumspy
+statsmodels
+matplotlib
+pyjanitor
+pyarrow
+python-dotenv
+pytest
+ruff
+black
+isort
